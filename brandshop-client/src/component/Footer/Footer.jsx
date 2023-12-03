@@ -41,7 +41,7 @@ const Footer = () => {
                     <div>
                         <h3 className="text-lg font-bold mb-4">SUBSCRIBE</h3>
                         <div className="flex gap-1">
-                            <input className=" rounded-lg p-2" type="text" placeholder="Enter Email Address" />
+                            <input className="text-black rounded-lg p-2" type="email" placeholder="Enter Email Address" />
                             <button className="  rounded-full text-4xl text-red-700 "><LuArrowRightCircle></LuArrowRightCircle></button>
                         </div>
                     </div>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
     return (
-        <div className="border grid grid-cols-4 items-center">
+        <div className="bg-white text-black grid grid-cols-4 items-center">
             <div className='ml-14 w-1/3'>
                 <Link to='/'><img className=" w-full" src="https://i.ibb.co/2tbH99X/logo.png" /></Link>
             </div>
