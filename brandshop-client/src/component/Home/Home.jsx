@@ -1,7 +1,9 @@
 // import { useEffect, useState } from "react";
 // import { Link, useLoaderData } from "react-router-dom";
 import About from "../About/About";
+import Accessories from "../Accessories/Accessories";
 import Banner from "../Banner/Banner";
+import Dealer from "../Dealer/Dealer";
 import ExtraSection from "../ExtraSection/ExtraSection";
 // import { useState } from "react";
 
@@ -85,6 +87,8 @@ const Home = () => {
             } */}
             <Banner></Banner>
             <About></About>
+            <Accessories></Accessories>
+            <Dealer></Dealer>
             <ExtraSection></ExtraSection>
         </div>
     );

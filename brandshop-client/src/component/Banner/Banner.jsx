@@ -2,7 +2,7 @@ import { LuArrowRightCircle } from "react-icons/lu";
 
 const Banner = () => {
     return (
-        <div className="relative ">
+        <div className="relative">
             <img src="https://i.ibb.co/mF9Fjqp/bannerimg.png" alt="" />
             <div className=" absolute text-white top-1/4 left-20 p-5 ">
                 <p className="font-medium text-4xl mb-3">Powerful, Fun and</p>
