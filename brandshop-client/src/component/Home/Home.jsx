@@ -1,6 +1,8 @@
 // import { useEffect, useState } from "react";
 // import { Link, useLoaderData } from "react-router-dom";
+import About from "../About/About";
 import Banner from "../Banner/Banner";
+import ExtraSection from "../ExtraSection/ExtraSection";
 // import { useState } from "react";
 
 
@@ -82,6 +84,8 @@ const Home = () => {
                     <button onClick={() => handleDelete(user._id)}>X</button></p>)
             } */}
             <Banner></Banner>
+            <About></About>
+            <ExtraSection></ExtraSection>
         </div>
     );
 };
