@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 
-
 const SignUp = () => {
     return (
         <div className="relative">
-            <img className="w-full" src="signupbg.png" />
+            <img className="w-full" src="https://i.ibb.co/R4MSLQ4/signupbg.png" />
             <div className="absolute top-0 left-44 items-center">
                 <div className=" w-full my-10 mx-16 p-5 ">
                     <form>
