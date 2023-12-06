@@ -1,20 +1,29 @@
-
+import { TbShoppingCartStar } from "react-icons/tb";
+import { IoCarSportSharp } from "react-icons/io5";
+import { FaDollarSign } from "react-icons/fa";
+import { IoSettingsOutline } from "react-icons/io5";
 
 const ProductCard = ({ card }) => {
-    const { _id, name, brand, type, rating, price, image } = card;
+    const { _id, image, name, brand, type, rating, price, } = card;
     return (
         <div>
-            <div className="border">
+            <div className="rounded-xl p-3 shadow-lg ">
                 <div>
-                    <img className="rounded-lg" src={image} />
+                    <img className="rounded-t-xl" src={image} />
                 </div>
-                <p className="font-bold text-black text-3xl py-3">{name}</p>
-                <div className="flex text-lg gap-10 items-center pb-3">
-                    <p className="flex items-center gap-2">{type}</p>
-                    <p className="flex items-center gap-2">{price}</p>
+                <div className="flex items-center justify-between">
+                    <p className="font-bold text-slate-950 text-3xl py-3">{name}</p>
+                    <p className="border border-red-700 rounded-bl-xl py-1 px-2 ">{brand}</p>
+
                 </div>
-                <div className="flex gap-6 items-center">
-                    <button className="text-white text-lg font-bold border-2 bg-[#001220] rounded-lg py-1 px-3" >View Details</button>
+                <div className="flex gap-10 items-center pb-3 text-xl font-medium text-slate-950">
+                    <p className="flex items-center gap-2 text-2xl"><IoCarSportSharp></IoCarSportSharp>{type}</p>
+                    <p className="flex items-center gap-2 "><TbShoppingCartStar></TbShoppingCartStar>{rating}</p>
+                    <p className="flex items-center"><FaDollarSign></FaDollarSign>{price}</p>
+                </div>
+                <div className="flex gap-6 items-center justify-between">
+                    <button className="text-white text-lg font-bold border-2 bg-slate-950 rounded-xl py-2 px-3" >More Details</button>
+                    <button className="text-2xl rounded-full border-2 p-2 mx-2 "><IoSettingsOutline></IoSettingsOutline></button>
                 </div>
             </div>
 
