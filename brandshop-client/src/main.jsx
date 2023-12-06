@@ -11,6 +11,8 @@ import ErrorPage from './component/ErrorPage/ErrorPage.jsx';
 import SignUp from './component/SignUp/SignUp.jsx';
 import SignIn from './component/SignIn/SignIn.jsx';
 import Update from './component/Update/Update.jsx';
+import AddProduct from './component/AddProduct/AddProduct.jsx';
+import Shop from './component/Shop/Shop.jsx';
 
 
 const router = createBrowserRouter([
@@ -25,12 +27,21 @@ const router = createBrowserRouter([
         // loader: () => fetch('http://localhost:5000/users')
       },
       {
+        path: "/allshop",
+        element: <Shop></Shop>,
+        loader: () => fetch('http://localhost:5000/allproduct')
+      },
+      {
         path: "/signup",
         element: <SignUp></SignUp>
       },
       {
         path: "/signin",
         element: <SignIn></SignIn>
+      },
+      {
+        path: "/addproduct",
+        element: <AddProduct></AddProduct>
       },
       {
         path: "update/:id",
