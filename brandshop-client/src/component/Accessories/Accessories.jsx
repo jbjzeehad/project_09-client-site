@@ -1,5 +1,6 @@
 import { LuArrowRightCircle } from "react-icons/lu";
 import { LuArrowLeftCircle } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 const Accessories = () => {
     return (
@@ -11,19 +12,19 @@ const Accessories = () => {
                     <div >
                         <img className="border-l-2 border-t-2  rounded-tl-3xl border-black pt-4 px-4" src="https://i.ibb.co/GpbPF4S/logo1.png" />
                         <div>
-                            <button className="w-full py-4 px-5 rounded-br-full bg-black font-bold text-white text-3xl flex items-center gap-3 hover:text-slate-400">NISSAN<LuArrowRightCircle></LuArrowRightCircle></button>
+                            <Link to='/nissan'><button className="w-full py-4 px-5 rounded-br-full bg-black font-bold text-white text-3xl flex items-center gap-3 hover:text-slate-400">NISSAN<LuArrowRightCircle></LuArrowRightCircle></button></Link>
                         </div>
                     </div>
                     <div>
                         <img className="border-l-2 border-t-2  rounded-tl-3xl border-black pt-4 px-4" src="https://i.ibb.co/3yjSMNs/logo2.png" />
                         <div>
-                            <button className="w-full py-4 px-5 rounded-br-full bg-black font-bold text-white text-3xl flex items-center gap-3 hover:text-orange-300">TOYOTA<LuArrowRightCircle></LuArrowRightCircle></button>
+                            <Link to='/toyota'><button className="w-full py-4 px-5 rounded-br-full bg-black font-bold text-white text-3xl flex items-center gap-3 hover:text-orange-300">TOYOTA<LuArrowRightCircle></LuArrowRightCircle></button></Link>
                         </div>
                     </div>
                     <div>
                         <img className="border-l-2 border-t-2  rounded-tl-3xl border-black pt-4 px-4" src="https://i.ibb.co/HHppHLm/logo4.png" />
                         <div>
-                            <button className="w-full py-4 px-5 rounded-br-full bg-black font-bold hover:text-blue-300 text-white text-3xl flex items-center gap-3">BMW<LuArrowRightCircle></LuArrowRightCircle></button>
+                            <Link to="/bmw"><button className="w-full py-4 px-5 rounded-br-full bg-black font-bold hover:text-blue-300 text-white text-3xl flex items-center gap-3">BMW<LuArrowRightCircle></LuArrowRightCircle></button></Link>
                         </div>
                     </div>
                     <div className=" text-center py-10">
@@ -42,19 +43,19 @@ const Accessories = () => {
                     <div>
                         <img className="border-t-2 border-r-2 rounded-tr-3xl border-black pt-4 px-4" src="https://i.ibb.co/4WssRb8/logo5.png" />
                         <div>
-                            <button className="w-full py-4 px-5 rounded-bl-full  bg-black font-bold text-white text-3xl flex justify-end items-center gap-3 hover:text-yellow-200"><LuArrowLeftCircle></LuArrowLeftCircle>CHEVROLET</button>
+                            <Link to='/chevrolet'><button className="w-full py-4 px-5 rounded-bl-full  bg-black font-bold text-white text-3xl flex justify-end items-center gap-3 hover:text-yellow-200"><LuArrowLeftCircle></LuArrowLeftCircle>CHEVROLET</button></Link>
                         </div>
                     </div>
                     <div>
                         <img className="border-r-2 border-t-2  rounded-tr-3xl border-black pt-4 px-4" src="https://i.ibb.co/Z1wTtR3/logo3.png" />
                         <div>
-                            <button className="w-full py-4 px-5 rounded-bl-full  bg-black font-bold text-white text-3xl flex justify-end items-center gap-3 hover:text-red-400"><LuArrowLeftCircle></LuArrowLeftCircle>FORD</button>
+                            <Link to="/ford"><button className="w-full py-4 px-5 rounded-bl-full  bg-black font-bold text-white text-3xl flex justify-end items-center gap-3 hover:text-red-400"><LuArrowLeftCircle></LuArrowLeftCircle>FORD</button></Link>
                         </div>
                     </div>
                     <div>
                         <img className="border-r-2 border-t-2  rounded-tr-3xl border-black pt-4 px-4" src="https://i.ibb.co/kHFvC32/logo6.png" />
                         <div>
-                            <button className="w-full py-4 px-5 rounded-bl-full  bg-black font-bold text-white text-3xl flex justify-end items-center gap-3 hover:text-lime-300"><LuArrowLeftCircle></LuArrowLeftCircle>AUDI</button>
+                            <Link to='/audi'>  <button className="w-full py-4 px-5 rounded-bl-full  bg-black font-bold text-white text-3xl flex justify-end items-center gap-3 hover:text-lime-300"><LuArrowLeftCircle></LuArrowLeftCircle>AUDI</button></Link>
                         </div>
                     </div>
 

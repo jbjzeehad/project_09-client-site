@@ -49,11 +49,11 @@ const AddProduct = () => {
                     </div>
                     <div className="grid pb-3">
                         <span className="text-xl pb-3 font-bold ">Brand</span>
-                        <input type="text" name="brand" placeholder="brand name" className="p-2 border-b-2 bg-transparent  outline-none focus:border-b-red-700" required />
+                        <input type="text" name="brand" placeholder="NISSAN FORD BMW" className="p-2 border-b-2 bg-transparent  outline-none focus:border-b-red-700" required />
                     </div>
                     <div className="grid pb-3">
                         <span className="text-xl pb-3 font-bold ">Type</span>
-                        <input type="text" name="type" placeholder="car truck accessories" className="p-2 border-b-2 bg-transparent  outline-none focus:border-b-red-700" required />
+                        <input type="text" name="type" placeholder="car truck suv accessories" className="p-2 border-b-2 bg-transparent  outline-none focus:border-b-red-700" required />
                     </div>
                     <div className="grid pb-3">
                         <span className="text-xl pb-3 font-bold ">Rating</span>

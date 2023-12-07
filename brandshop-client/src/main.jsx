@@ -13,6 +13,12 @@ import SignIn from './component/SignIn/SignIn.jsx';
 import Update from './component/Update/Update.jsx';
 import AddProduct from './component/AddProduct/AddProduct.jsx';
 import Shop from './component/Shop/Shop.jsx';
+import Nissan from './component/Nissan/Nissan.jsx';
+import Ford from './component/Ford/Ford.jsx';
+import BmwCar from './component/BmwCar/BmwCar.jsx';
+import Toyota from './component/Toyota/Toyota.jsx';
+import Chevrolet from './component/Chevrolet/Chevrolet.jsx';
+import Audi from './component/Audi/Audi.jsx';
 
 
 const router = createBrowserRouter([
@@ -42,6 +48,35 @@ const router = createBrowserRouter([
       {
         path: "/addproduct",
         element: <AddProduct></AddProduct>
+      },
+      {
+        path: "/nissan",
+        element: <Nissan></Nissan>,
+        loader: () => fetch('http://localhost:5000/allproduct')
+      },
+      {
+        path: "/ford",
+        element: <Ford></Ford>,
+        loader: () => fetch('http://localhost:5000/allproduct')
+      },
+      {
+        path: "/toyota",
+        element: <Toyota></Toyota>,
+        loader: () => fetch('http://localhost:5000/allproduct')
+      },
+      {
+        path: "/bmw",
+        element: <BmwCar></BmwCar>,
+        loader: () => fetch('http://localhost:5000/allproduct')
+      },
+      {
+        path: "/audi",
+        element: <Audi></Audi>,
+        loader: () => fetch('http://localhost:5000/allproduct')
+      },
+      {
+        path: '/chevrolet',
+        element: <Chevrolet></Chevrolet>
       },
       {
         path: "update/:id",
