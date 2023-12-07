@@ -17,17 +17,17 @@ const Audi = () => {
 
                     <div className=" relative shadow-md shadow-black">
                         <img className="" src="https://i.ibb.co/26bg2ZZ/audia5.png" />
-                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-white">Audi A5</p>
+                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-black">Audi A5</p>
                         <img className="absolute bottom-0 right-0 w-1/4 px-5" src="https://i.ibb.co/2tbH99X/logo.png" />
                     </div>
                     <div className=" relative shadow-md shadow-black">
-                        <img className="" src="https://i.ibb.co/sJtT9zL/nissan-Rogue.jpg" />
-                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-white">Nissan Rogue</p>
+                        <img className="" src="https://i.ibb.co/56fGT7n/auditt.png" />
+                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-black">Audi TT</p>
                         <img className="absolute bottom-0 right-0 w-1/4 px-5" src="https://i.ibb.co/2tbH99X/logo.png" />
                     </div>
                     <div className=" relative shadow-md shadow-black">
-                        <img className="" src="https://i.ibb.co/sJtT9zL/nissan-Rogue.jpg" />
-                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-white">Nissan Rogue</p>
+                        <img className="" src="https://i.ibb.co/mcD3B5K/audiq8.png" />
+                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-black">Audi Q8</p>
                         <img className="absolute bottom-0 right-0 w-1/4 px-5" src="https://i.ibb.co/2tbH99X/logo.png" />
                     </div>
                 </div>

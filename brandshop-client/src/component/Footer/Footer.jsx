@@ -57,7 +57,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="text-center pb-4">
-                <h3 className="text-base text-white font-light">@ 2023 AEMotors</h3>
+                <h3 className="text-base text-white font-light">@ 2023 AEMotors | Jbj Zeehad</h3>
             </div>
 
         </div>

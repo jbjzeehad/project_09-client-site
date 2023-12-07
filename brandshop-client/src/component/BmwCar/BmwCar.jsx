@@ -9,25 +9,25 @@ const BmwCar = () => {
     return (
         <div>
             <div className="grid justify-items-center p-5">
-                <img className="w-20" src="https://i.ibb.co/GpbPF4S/logo4.png" />
-                <p className="text-xl font-bold pt-2">BMW</p>
+                <img className="w-28" src="https://i.ibb.co/HHppHLm/logo4.png" />
+
             </div>
             <Marquee pauseOnHover={true}>
                 <div className=" p-5 flex gap-10">
 
                     <div className=" relative shadow-md shadow-black">
-                        <img src="https://i.ibb.co/r6d2fNt/nissangtr.png" />
-                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-white">Nissan GTR</p>
+                        <img src="https://i.ibb.co/mX2zKDY/bmw-5.png" />
+                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-black">BMW 530i</p>
                         <img className="absolute bottom-0 right-0 w-1/4 px-5" src="https://i.ibb.co/2tbH99X/logo.png" />
                     </div>
                     <div className=" relative shadow-md shadow-black">
-                        <img src="https://i.ibb.co/KLmb41s/nissan-maxima.png" />
-                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-white">Nissan Maxima</p>
+                        <img src="https://i.ibb.co/ChkqFmp/bmw-ev.png" />
+                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-black">BMW iX</p>
                         <img className="absolute bottom-0 right-0 w-1/4 px-5" src="https://i.ibb.co/2tbH99X/logo.png" />
                     </div>
                     <div className=" relative shadow-md shadow-black">
-                        <img src="https://i.ibb.co/Q95vMBc/nissan-z.png" />
-                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-white">Nissan Z</p>
+                        <img src="https://i.ibb.co/275mHxP/bmw-x1.png" />
+                        <p className="absolute top-0 left-0 text-2xl p-5 font-semibold text-black">BMW X1</p>
                         <img className="absolute bottom-0 right-0 w-1/4 px-5" src="https://i.ibb.co/2tbH99X/logo.png" />
                     </div>
 

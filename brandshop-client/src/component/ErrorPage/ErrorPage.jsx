@@ -3,7 +3,7 @@
 const ErrorPage = () => {
     return (
         <div>
-            <h3>Bashae jaw</h3>
+            <h3>CAR NOT FOUND</h3>
         </div>
     );
 };

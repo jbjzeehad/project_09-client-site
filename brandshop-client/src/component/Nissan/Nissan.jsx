@@ -10,8 +10,8 @@ const Nissan = () => {
     return (
         <div>
             <div className="grid justify-items-center p-5">
-                <img className="w-20" src="https://i.ibb.co/GpbPF4S/logo1.png" />
-                <p className="text-xl font-bold pt-2">NISSAN</p>
+                <img className="w-24" src="https://i.ibb.co/GpbPF4S/logo1.png" />
+
             </div>
             <Marquee pauseOnHover={true}>
                 <div className=" p-5 flex gap-10">
