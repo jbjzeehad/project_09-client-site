@@ -27,7 +27,6 @@ const ProductCard = ({ card }) => {
                     <button className="text-2xl rounded-full border-2 p-2 mx-2 "><IoSettingsOutline></IoSettingsOutline></button>
                 </div>
             </div>
-
         </div>
     );
 };
