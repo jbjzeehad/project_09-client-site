@@ -2,9 +2,10 @@ import { TbShoppingCartStar } from "react-icons/tb";
 import { IoCarSportSharp } from "react-icons/io5";
 import { FaDollarSign } from "react-icons/fa";
 import { IoSettingsOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const ProductCard = ({ card }) => {
-    const { _id, image, name, brand, type, rating, price, } = card;
+    const { _id, image, name, brand, type, rating, price } = card;
     return (
         <div>
             <div className="rounded-xl p-3 shadow-lg ">
@@ -22,7 +23,7 @@ const ProductCard = ({ card }) => {
                     <p className="flex items-center"><FaDollarSign></FaDollarSign>{price}</p>
                 </div>
                 <div className="flex gap-6 items-center justify-between">
-                    <button className="text-white text-lg font-bold border-2 bg-slate-950 rounded-xl py-2 px-3" >More Details</button>
+                    <Link to={`/cardetails/${_id}`}>  <button className="text-white text-lg font-bold border-2 bg-slate-950 rounded-xl py-2 px-3" >More Details</button></Link>
                     <button className="text-2xl rounded-full border-2 p-2 mx-2 "><IoSettingsOutline></IoSettingsOutline></button>
                 </div>
             </div>

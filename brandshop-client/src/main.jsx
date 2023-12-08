@@ -19,6 +19,7 @@ import BmwCar from './component/BmwCar/BmwCar.jsx';
 import Toyota from './component/Toyota/Toyota.jsx';
 import Chevrolet from './component/Chevrolet/Chevrolet.jsx';
 import Audi from './component/Audi/Audi.jsx';
+import CarDetails from './component/CarDetails/CarDetails.jsx';
 
 
 const router = createBrowserRouter([
@@ -77,6 +78,11 @@ const router = createBrowserRouter([
       {
         path: '/chevrolet',
         element: <Chevrolet></Chevrolet>
+      },
+      {
+        path: '/cardetails/:id',
+        element: <CarDetails></CarDetails>,
+        loader: () => fetch('http://localhost:5000/allproduct')
       },
       {
         path: "update/:id",
