@@ -1,3 +1,4 @@
+import { ToastContainer, toast } from "react-toastify";
 
 
 
@@ -28,7 +29,7 @@ const AddProduct = () => {
             .then(data => {
                 console.log("Sending to server", data);
                 if (data.insertedId) {
-                    alert("Add to server");
+                    toast("Car added Successfully !");
                 }
                 form.reset();
             })
@@ -81,7 +82,7 @@ const AddProduct = () => {
                     </div>
                 </div>
             </form>
-
+            <ToastContainer></ToastContainer>
 
         </div>
     );

@@ -9,7 +9,6 @@ const SignUp = () => {
 
     const [supError, setSupError] = useState('');
     const [success, setSucess] = useState('');
-
     const { createUser } = useContext(AuthCon);
 
     const userSignUp = () => {
@@ -23,9 +22,6 @@ const SignUp = () => {
         const password = e.target.password.value;
         const photourl = e.target.photourl.value;
 
-
-
-
         if (password.length < 6) {
             setSupError("At least 6 character");
             return;
@@ -37,8 +33,10 @@ const SignUp = () => {
             setSupError("At least a Special Character");
             return;
         }
+
         setSucess('');
         setSupError('');
+
         createUser(email, password)
             .then(result => {
                 console.log(result.user);
@@ -51,16 +49,12 @@ const SignUp = () => {
                 })
                     .then(() => console.log('done'))
                     .catch(() => console.kog('error'))
-
             })
             .catch(error => {
                 console.error(error);
                 setSupError("Already in Use");
             })
     }
-
-
-
 
     return (
         <div className="relative">
@@ -84,15 +78,13 @@ const SignUp = () => {
                             <span className="text-xl pb-3 font-bold ">Photo</span>
                             <input type="text" name="photourl" placeholder="photo url" className="p-2 border-b-2 bg-transparent  outline-none focus:border-b-red-700" required />
                         </div>
+
                         {
                             supError && <p className="text-sm text-red-500">{supError}</p>
                         }
                         {
                             success && <p className="text-sm text-lime-500">{success}</p>
                         }
-
-
-
 
                         <div className=" mt-7 flex items-center gap-6">
                             <button className="border-red-700 border-2 w-2/5 text-center text-xl hover:border-slate-900 font-bold p-3 rounded-lg">SIGN UP</button>
@@ -105,5 +97,4 @@ const SignUp = () => {
         </div>
     );
 };
-
 export default SignUp;

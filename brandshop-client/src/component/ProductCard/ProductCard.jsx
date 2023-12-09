@@ -24,7 +24,7 @@ const ProductCard = ({ card }) => {
                 </div>
                 <div className="flex gap-6 items-center justify-between">
                     <Link to={`/cardetails/${_id}`}>  <button className="text-white text-lg font-bold border-2 bg-slate-950 rounded-xl py-2 px-3" >More Details</button></Link>
-                    <button className="text-2xl rounded-full border-2 p-2 mx-2 "><IoSettingsOutline></IoSettingsOutline></button>
+                    <Link to={`/update/${_id}`}><button className="text-2xl rounded-full border-2 p-2 mx-2 "><IoSettingsOutline></IoSettingsOutline></button> </Link>
                 </div>
             </div>
         </div>

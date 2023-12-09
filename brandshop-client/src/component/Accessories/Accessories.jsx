@@ -38,7 +38,7 @@ const Accessories = () => {
                     <div className=" text-center grid justify-items-center py-10">
                         <h3 className="text-5xl font-bold">Yep. We buy cars, <span className="text-red-700">too</span>.</h3>
                         <p className="py-3 text-2xl font-semibold">No haggle, no hassle</p>
-                        <button className=" bg-red-600 text-white text-xl font-bold rounded-full py-2 px-4 flex items-center gap-2">TRADE/SELL<LuArrowRightCircle></LuArrowRightCircle></button>
+                        <Link to='/addproduct'><button className=" bg-red-600 text-white text-xl font-bold rounded-full py-2 px-4 flex items-center gap-2 hover:text-black">TRADE/SELL<LuArrowRightCircle></LuArrowRightCircle></button></Link>
                     </div>
                     <div>
                         <img className="border-t-2 border-r-2 rounded-tr-3xl border-black pt-4 px-4" src="https://i.ibb.co/4WssRb8/logo5.png" />

@@ -21,6 +21,8 @@ import Chevrolet from './component/Chevrolet/Chevrolet.jsx';
 import Audi from './component/Audi/Audi.jsx';
 import CarDetails from './component/CarDetails/CarDetails.jsx';
 import AuthProviders from './component/Providers/AuthProviders';
+import PrivateRoutes from './component/PrivateRoutes/PrivateRoutes.jsx';
+import MyCart from './component/MyCart/MyCart.jsx';
 
 
 const router = createBrowserRouter([
@@ -49,7 +51,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/addproduct",
-        element: <AddProduct></AddProduct>
+        element: <PrivateRoutes><AddProduct></AddProduct></PrivateRoutes>
+      },
+      {
+        path: "/mycart",
+        element: <PrivateRoutes><MyCart></MyCart></PrivateRoutes>
       },
       {
         path: "/nissan",
@@ -82,13 +88,13 @@ const router = createBrowserRouter([
       },
       {
         path: '/cardetails/:id',
-        element: <CarDetails></CarDetails>,
+        element: <PrivateRoutes> <CarDetails></CarDetails></PrivateRoutes>,
         loader: () => fetch('http://localhost:5000/allproduct')
       },
       {
         path: "update/:id",
-        element: <Update></Update>,
-        loader: ({ params }) => fetch(`http://localhost:5000/users/${params.id}`)
+        element: <PrivateRoutes><Update></Update></PrivateRoutes>,
+        loader: ({ params }) => fetch(`http://localhost:5000/allproduct/${params.id}`)
       }
     ]
   },

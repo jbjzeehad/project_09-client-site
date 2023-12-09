@@ -7,11 +7,12 @@ import { useLoaderData, useParams } from "react-router-dom";
 const CarDetails = () => {
 
     const shopCarDetails = useLoaderData();
-    console.log(shopCarDetails[0]);
+
     const { id } = useParams();
-    console.log(id);
+
     const details = shopCarDetails.find(carDescription => carDescription._id === id);
-    console.log(details);
+
+
 
     return (
         <div className="p-5">
