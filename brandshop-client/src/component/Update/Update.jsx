@@ -1,4 +1,5 @@
 import { useLoaderData } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
 
 
 const Update = () => {
@@ -29,7 +30,7 @@ const Update = () => {
             .then(data => {
                 console.log(data);
                 if (data.modifiedCount > 0) {
-                    alert("Updated Successfully");
+                    toast("Updated Successfully");
                 }
             })
 
@@ -77,7 +78,7 @@ const Update = () => {
 
                 </div>
             </form>
-
+            <ToastContainer></ToastContainer>
 
         </div>
     );

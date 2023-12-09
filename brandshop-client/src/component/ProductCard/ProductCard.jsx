@@ -23,8 +23,8 @@ const ProductCard = ({ card }) => {
                     <p className="flex items-center"><FaDollarSign></FaDollarSign>{price}</p>
                 </div>
                 <div className="flex gap-6 items-center justify-between">
-                    <Link to={`/cardetails/${_id}`}>  <button className="text-white text-lg font-bold border-2 bg-slate-950 rounded-xl py-2 px-3" >More Details</button></Link>
-                    <Link to={`/update/${_id}`}><button className="text-2xl rounded-full border-2 p-2 mx-2 "><IoSettingsOutline></IoSettingsOutline></button> </Link>
+                    <Link to={`/cardetails/${_id}`}>  <button className="text-white text-lg font-bold border-2 bg-slate-950 rounded-xl py-2 px-3 hover:border-red-700 hover:bg-white hover:text-black" >More Details</button></Link>
+                    <Link to={`/update/${_id}`}><button className="text-2xl rounded-full border-2 p-2 mx-2 hover:text-lime-700 hover:border-red-700 "><IoSettingsOutline></IoSettingsOutline></button></Link>
                 </div>
             </div>
         </div>
