@@ -9,7 +9,7 @@ const Shop = () => {
     return (
         <div>
             <h3 className="px-14 text-red-700 pt-5 text-3xl flex gap-5 items-center"><IoCarSportSharp></IoCarSportSharp>{seeProducts.length}</h3>
-            <div className="grid grid-cols-3 gap-5 p-10">
+            <div className="grid lg:grid-cols-3 md:grid-cols-1 gap-5 p-10">
                 {
                     seeProducts.map(products =>
                         <ProductCard key={products._id} card={products}>

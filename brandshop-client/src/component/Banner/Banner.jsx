@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const Banner = () => {
     return (
+
         <div className="relative">
             <img src="https://i.ibb.co/mF9Fjqp/bannerimg.png" alt="" />
             <div className=" absolute text-white top-1/4 left-20 p-5 ">
@@ -14,6 +15,7 @@ const Banner = () => {
             <div className="bg-slate-900 opacity-60 absolute top-0 right-0 w-1/2 h-full">
             </div>
         </div>
+
     );
 };
 
