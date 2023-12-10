@@ -34,12 +34,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        // loader: () => fetch('http://localhost:5000/users')
+
       },
       {
         path: "/allshop",
         element: <Shop></Shop>,
-        loader: () => fetch('http://localhost:5000/allproduct')
+        loader: () => fetch('https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/allproduct')
       },
       {
         path: "/signup",
@@ -56,32 +56,32 @@ const router = createBrowserRouter([
       {
         path: "/mycart",
         element: <PrivateRoutes><MyCart></MyCart></PrivateRoutes>,
-        loader: () => fetch('http://localhost:5000/users')
+        loader: () => fetch('https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/users')
       },
       {
         path: "/nissan",
         element: <Nissan></Nissan>,
-        loader: () => fetch('http://localhost:5000/allproduct')
+        loader: () => fetch('https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/allproduct')
       },
       {
         path: "/ford",
         element: <Ford></Ford>,
-        loader: () => fetch('http://localhost:5000/allproduct')
+        loader: () => fetch('https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/allproduct')
       },
       {
         path: "/toyota",
         element: <Toyota></Toyota>,
-        loader: () => fetch('http://localhost:5000/allproduct')
+        loader: () => fetch('https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/allproduct')
       },
       {
         path: "/bmw",
         element: <BmwCar></BmwCar>,
-        loader: () => fetch('http://localhost:5000/allproduct')
+        loader: () => fetch('https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/allproduct')
       },
       {
         path: "/audi",
         element: <Audi></Audi>,
-        loader: () => fetch('http://localhost:5000/allproduct')
+        loader: () => fetch('https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/allproduct')
       },
       {
         path: '/chevrolet',
@@ -90,12 +90,12 @@ const router = createBrowserRouter([
       {
         path: '/cardetails/:id',
         element: <PrivateRoutes> <CarDetails></CarDetails></PrivateRoutes>,
-        loader: () => fetch('http://localhost:5000/allproduct')
+        loader: () => fetch('https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/allproduct')
       },
       {
         path: "update/:id",
         element: <PrivateRoutes><Update></Update></PrivateRoutes>,
-        loader: ({ params }) => fetch(`http://localhost:5000/allproduct/${params.id}`)
+        loader: ({ params }) => fetch(`https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/allproduct/${params.id}`)
       }
     ]
   },

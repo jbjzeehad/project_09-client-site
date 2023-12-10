@@ -18,7 +18,7 @@ const AddProduct = () => {
         const productsDetails = { name, brand, type, rating, price, image, description };
         console.log(productsDetails);
 
-        fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/allproduct', {
+        fetch('https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/allproduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

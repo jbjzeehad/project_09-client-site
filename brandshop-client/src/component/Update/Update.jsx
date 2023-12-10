@@ -18,7 +18,7 @@ const Update = () => {
         const image = form.image.value;
         const productsDetails = { name, brand, type, rating, price, image };
         console.log(productsDetails);
-        fetch(`http://localhost:5000/allproduct/${loadedProduct._id}`, {
+        fetch(`https://ph-brandshop-server-q6jpmf89v-jubayers-projects.vercel.app/allproduct/${loadedProduct._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
