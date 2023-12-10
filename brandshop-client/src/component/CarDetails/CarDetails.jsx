@@ -24,7 +24,7 @@ const CarDetails = () => {
         const myCartDetails = { name, brand, type, rating, price, image };
         console.log(myCartDetails);
 
-        fetch('http://localhost:5000/users', {
+        fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/users', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

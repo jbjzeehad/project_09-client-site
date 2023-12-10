@@ -18,7 +18,7 @@ const AddProduct = () => {
         const productsDetails = { name, brand, type, rating, price, image, description };
         console.log(productsDetails);
 
-        fetch('http://localhost:5000/allproduct', {
+        fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/allproduct', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
