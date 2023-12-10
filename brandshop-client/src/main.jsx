@@ -34,11 +34,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
+        // loader: () => fetch('http://localhost:5000/users')
       },
       {
         path: "/allshop",
         element: <Shop></Shop>,
-        loader: () => fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/allproduct')
+        loader: () => fetch('http://localhost:5000/allproduct')
       },
       {
         path: "/signup",
@@ -55,32 +56,32 @@ const router = createBrowserRouter([
       {
         path: "/mycart",
         element: <PrivateRoutes><MyCart></MyCart></PrivateRoutes>,
-        loader: () => fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/users')
+        loader: () => fetch('http://localhost:5000/users')
       },
       {
         path: "/nissan",
         element: <Nissan></Nissan>,
-        loader: () => fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/allproduct')
+        loader: () => fetch('http://localhost:5000/allproduct')
       },
       {
         path: "/ford",
         element: <Ford></Ford>,
-        loader: () => fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/allproduct')
+        loader: () => fetch('http://localhost:5000/allproduct')
       },
       {
         path: "/toyota",
         element: <Toyota></Toyota>,
-        loader: () => fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/allproduct')
+        loader: () => fetch('http://localhost:5000/allproduct')
       },
       {
         path: "/bmw",
         element: <BmwCar></BmwCar>,
-        loader: () => fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/allproduct')
+        loader: () => fetch('http://localhost:5000/allproduct')
       },
       {
         path: "/audi",
         element: <Audi></Audi>,
-        loader: () => fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/allproduct')
+        loader: () => fetch('http://localhost:5000/allproduct')
       },
       {
         path: '/chevrolet',
@@ -89,12 +90,12 @@ const router = createBrowserRouter([
       {
         path: '/cardetails/:id',
         element: <PrivateRoutes> <CarDetails></CarDetails></PrivateRoutes>,
-        loader: () => fetch('ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/allproduct')
+        loader: () => fetch('http://localhost:5000/allproduct')
       },
       {
         path: "update/:id",
         element: <PrivateRoutes><Update></Update></PrivateRoutes>,
-        loader: ({ params }) => fetch(`ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/allproduct/${params.id}`)
+        loader: ({ params }) => fetch(`http://localhost:5000/allproduct/${params.id}`)
       }
     ]
   },

@@ -18,7 +18,7 @@ const MycartCard = ({ myCard, mycarCart, setmyCart }) => {
             confirmButtonText: "Yes, delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`ph-brandshop-server-fygonk9lc-jubayers-projects.vercel.app/${productId}`, {
+                fetch(`http://localhost:5000/users/${productId}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -33,6 +33,7 @@ const MycartCard = ({ myCard, mycarCart, setmyCart }) => {
                             const intproductId = parseInt(productId);
                             const remaining = mycarCart.filter(car => car._id !== intproductId);
                             setmyCart(remaining);
+
                         }
                     });
             }
